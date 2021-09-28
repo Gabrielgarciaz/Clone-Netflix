@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+:root{
+    --vermelho: #E50914;
+    --preto: #161616;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--preto);
+    font-family:  'poppins', 'Times New Roman', Times, serif;
+    color: white;
+}
+/*    Menu Netflix      */
+header .container{
+    display: flex;
+    align-items: center;
+}
+header a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+header a:hover{
+    color: #fff;
+}
+/*  Filme principal   */
+.filme-principal{
+    font-size: 20px; /* Tamanho do título e descrição do filme*/
+    background: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.50)100%), url('../img/creed-fundo.jpg'); /*Imagem de fundo do filme*/
+    height: 500px; /* Altura da imagem */
+    background-size: cover; /* A imagem vai ficar centralizada*/
+    display: flex;
+    flex-direction: column; /* tira do horizontal e bota em coluna vertical */
+    justify-content: center; /* Centraliza os itens no meio */
+    align-items: flex-start;  /* Começa do início (esquerda no caso) */
+}
+.container{
+    margin-left: 20px; /* Tira o título, descrição e botões do canto da tela */
+}
+.filme-principal .container{
+    width: 60%; /*texto não chegua até o final da tela e tem tamanho mínimo*/
+}
+.filme-principal .descricao{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 70%;
+}
+.titulo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 200%;
+    
+}
+.botao{
+    background-color: rgba(0, 0, 0, 0.50);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 12px;
+    transition: 0.5s ease all;
+}
+.botao:hover{
+    background-color: white;
+    color: var(--preto);
+}
+.botao i{
+    margin-right: 5px;  /*da espaço entre o ícone e a palavra*/
+}
+.carrosel-filmes{
+    margin-top: 5px;
+    
+}
+.titulo-carrosel{
+    font-size: 110%;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}

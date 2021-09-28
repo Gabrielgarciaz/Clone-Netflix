@@ -1,0 +1,10 @@
+@media screen and (max-width:700px){
+    header .container{
+        display: flex;
+        flex-direction: column; /* em forma de coluna, letras para baixo */
+    }
+    .botao{
+        margin-top: 8px; /*da um espaço entre os botões de cima para baixo*/
+    }
+} 
+    
